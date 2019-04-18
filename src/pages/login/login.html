@@ -1,0 +1,34 @@
+
+
+
+<ion-content [ngStyle]="{ 'background-color': '#efefef'}" padding class="loginbg">
+  <h2 class="home-title"><img src="./assets/imgs/betweenus2.png"></h2>
+ <ion-list id="logform">
+ <ion-item class="logitem">
+ <ion-label floating>Email</ion-label>
+ <ion-input type="text" name="email" [(ngModel)]="data.email"></ion-input>
+ </ion-item>
+ <ion-item>
+ <ion-label floating>Password</ion-label>
+ <ion-input type="text" name="pwd" [(ngModel)]="data.pwd"></ion-input>
+ </ion-item>
+
+<div padding>
+  <button ion-button class="logbut" block (click)="submit()">Connectez-vous</button>
+</div>
+    </ion-list>
+<div padding (click)="openRegister()">
+    Créez un compte en cliquant ici !
+    </div>
+    <!--
+    <ion-card>
+ <ion-card-header>
+ Response
+ </ion-card-header>
+
+ <ion-card-content>
+ <b>{{data.response}}</b>
+ </ion-card-content>
+ </ion-card>
+-->
+</ion-content>

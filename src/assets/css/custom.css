@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Lovely';
+  src: url('../fonts/lovelyfont/lovelyday.ttf'); 
+}
+
+@font-face {
+  font-family: 'Paradis';
+  src: url('../fonts/paradis/anotherdaynparadise.ttf');
+}
+
+@font-face {
+  font-family: 'Roona';
+  src: url('../fonts/roona/RoonaSansBo_PERSONAL_USE.ttf');
+}
+
+@font-face {
+  font-family: 'Moonget';
+  src: url('../fonts/moonget/moon_get-Heavy.ttf');
+}
+
+.bg{
+    background-image: url('../imgs/bookheart.jpg');
+    background-image:no-repeat;
+    background-size:100%;
+    
+}
+
+.home{
+    font-family:Lovely;
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.scroll-content{
+
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+
+.home-title{
+text-align:center;
+    background-color:rgba(255,255,255,0.1);
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-family:Lovely;
+}
+
+
+.tiles-container{
+text-align:center;
+font-family:Moonget;
+
+    height:50%;
+    margin-top:5em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.tiles2-row{
+width:100%;
+    height:48%;
+    display:flex;
+    justify-content:space-between;
+
+    
+}
+.tiles1-row{
+width:100%;
+    height:48%;
+    display:flex;
+    justify-content:space-around;
+   
+
+    
+}
+
+.tiles2{
+    background-color:rgba(255,255,255,0.1);
+    width:90%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid rgba(255,255,255,0.6);
+    padding:2em;
+    
+    
+}
+
+.tiles1{
+   font-family:Lobster;
+    background-color:rgba(255,255,255,0.1);
+     display:flex;
+    justify-content:space-around;
+    align-items:center;
+     border:1px solid rgba(255,255,255,0.6);
+ 
+    padding:2em;
+}
+
+.place-item{
+    width:90% !important;
+    margin:0 auto !important;
+    margin-bottom:15px !important;
+    background-color: rgba(255,255,255,0.6) !important;
+}
+
+.nav-icon{
+    font-size:3.5em !important;
+    color:white;
+}
+.feedactu{
+    display:flex;
+    flex-direction:column;
+    background-color:#efefef !important;
+}
+
+.feedactu p{
+    margin:10px;
+   
+}
+
+.feedblock{
+    flex-direction:column;
+    color:#333;
+    margin-bottom: 3px;
+    background-color:#fff;
+    padding-top:5px;
+}
+
+.feedimg{
+    width:100%;
+    margin:0 auto;
+}
+
+.feedusername{
+    font-weight:bold;
+    color:#333;
+}
+
+.feedpostname{
+    padding-bottom:7px;
+}

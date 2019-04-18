@@ -1,0 +1,29 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+
+<ion-content padding [ngStyle]="{ 'background-image': 'url(' + bgurl + ')'}" style="background-repeat:no-repeat;background-position: center top;
+    background-size:100% 100%;">
+  <h2 class="home-title">{{title}}</h2>
+
+    <div class="tiles-container">
+    <div class="tiles1-row">
+        <div class="tiles1" (click)="openGoldenBook();">
+           LIVRE D'OR
+        </div>
+        <!--<div class="tiles2"  (click)="openList();">
+            LISTE DE MARIAGE
+        </div>-->
+      </div>
+    <!--<div *ngIf = "answer == 'Y';" class="tiles1-row">
+        <div class="tiles1"  (click)="openConfirm();">
+             CONFIRMER MA PRESENCE
+        </div>
+    </div>-->
+
+
+   </div>
+</ion-content>

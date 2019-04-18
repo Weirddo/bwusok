@@ -1,0 +1,26 @@
+<ion-content padding [ngStyle]="{ 'background-image': 'url(' + bgurl + ')'}" class="feedactu" style="background-repeat:no-repeat;background-position: center top;
+    background-size:100% 100%;">
+  <h2 class="home-title">Fil</h2>
+
+
+
+
+<!--*ngIf="{{post.ref_util_id}} !=0" -->
+<div *ngFor="let post of posts" class="feedblock">
+<div class="postline">
+    <p class="feedusername">{{post.user_name}}</p>
+    <ion-icon name="alert" class="alert trash" (click)="report(post.id)"></ion-icon>
+    <ion-icon *ngIf="post.ref_util_id== ref_utilisateur|| type_inv=='A'" name="trash" class="trash" (click)="delete(post.id)"></ion-icon>
+    <ion-icon name="remove-circle" class="alert trash" (click)="block(post.ref_util_id)"></ion-icon>
+   
+
+   </div>
+    <img class="feedimg" src="{{post.url}}">
+
+
+    </div>
+
+
+
+
+</ion-content>

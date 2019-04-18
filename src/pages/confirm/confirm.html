@@ -1,0 +1,63 @@
+<!--
+  Generated template for the ConfirmPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding [ngStyle]="{ 'background-image': 'url(' + bgurl + ')'}" style="background-repeat:no-repeat;background-position: center top;
+    background-size:100% 100%;">
+  <h2 class="home-title">Présence</h2>
+<ion-list no-border>
+
+<div class="home-title"> Veuillez confirmer votre présence en cochant les cases ci-dessous :</div>
+
+
+    <ion-item class="itemcheck">
+            <ion-toggle checked="false" [color]= primaryColor (ionChange)="updateVin()" [(ngModel)]="data.toggle_vin"></ion-toggle>
+
+      <ion-label class="checklabel">
+       Vin d'honneur
+      </ion-label>
+<ion-input type="hidden" [(ngModel)]="data.confirmed_vin" value="N"></ion-input>
+     <!-- <ion-icon name='body' item-start></ion-icon>-->
+</ion-item>
+
+        <ion-item class="itemcheck">
+        <ion-toggle checked="false" (ionChange)="updateCerem()" [(ngModel)]="data.toggle_cerem"></ion-toggle>
+
+      <ion-label class="checklabel">
+       Cérémonie
+      </ion-label>
+            <ion-input type="hidden" [(ngModel)]="data.confirmed_cerem" value="N"></ion-input>
+      <!--<ion-icon name='body' item-start></ion-icon>-->
+</ion-item>
+
+        <ion-item class="itemcheck">
+            <ion-toggle checked="false" (ionChange)="updateFete()" [(ngModel)]="data.toggle_soiree"></ion-toggle>
+
+      <ion-label class="checklabel">
+       Soirée
+      </ion-label>
+            <ion-input type="hidden" [(ngModel)]="data.confirmed_soiree" value="N"></ion-input>
+     <!-- <ion-icon name='restaurant' item-start></ion-icon>-->
+</ion-item>
+
+    <ion-item class="itemcheck">
+      <ion-toggle checked="false" (ionChange)="updateBrunch()" [(ngModel)]="data.toggle_brunch"></ion-toggle>
+      <ion-label class="checklabel">
+       Brunch
+      </ion-label>
+        <ion-input type="hidden" [(ngModel)]="data.confirmed_brunch" value="N"></ion-input>
+   <!--   <ion-icon confirmed_brunch='pizza' item-start></ion-icon>-->
+</ion-item>
+    </ion-list>
+
+     <div class="tiles1-row">
+        <div class="button-md" id="confcheckbut" (click)="submitPresence();">
+           CONFIRMER
+        </div>
+        <!--<div class="tiles2"  (click)="openList();">
+            LISTE DE MARIAGE
+        </div>-->
+      </div>
+</ion-content>

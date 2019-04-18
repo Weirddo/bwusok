@@ -1,0 +1,27 @@
+<ion-content padding class="bg">
+  <h2 class="home-title"><img src="../assets/imgs/b"></h2>
+    
+    
+
+
+ <ion-list *ngFor="let event of events" class="eventblock">
+ 
+
+ <button block ion-button (click)="submit()">{{event.title}}</button>
+ <ion-input type="hidden" name="eventid" value={{event.eventid}}></ion-input>
+
+
+    </ion-list>
+    
+    <!--
+    <ion-card>
+ <ion-card-header>
+ Response
+ </ion-card-header>
+ 
+ <ion-card-content>
+ <b>{{data.response}}</b>
+ </ion-card-content>
+ </ion-card>
+-->
+</ion-content>

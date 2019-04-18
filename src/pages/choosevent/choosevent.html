@@ -1,0 +1,21 @@
+<ion-content [ngStyle]="{ 'background-color': '#efefef'}" padding class="loginbg">
+  <h2 class="home-title"><img src="./assets/imgs/betweenus2.png"></h2>
+
+     <div class="tiles-container">
+    <div class="tiles1-row">
+        <div class="tiles1">
+       
+        </div>
+        <!--<div class="tiles2"  (click)="openList();">
+            LISTE DE MARIAGE
+        </div>-->
+      </div>
+<div *ngFor="let event of events" class="feedblock">
+<div class="postline" (click)="submit(event.eventid);">
+    <p class="feedusername">{{event.title}}</p>
+   </div>
+    </div>
+
+
+   </div>
+</ion-content>

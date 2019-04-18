@@ -1,0 +1,19 @@
+
+<ion-header>
+
+</ion-header>
+ 
+<ion-content padding class="beforesend">
+    <img src="{{pathForImage(lastImage)}}" style="width: 100%" [hidden]="lastImage === null">
+        <h3 [hidden]="lastImage !== null">Please Select Image!</h3>
+<!--<img src="1.jpg">-->
+</ion-content>
+<ion-footer class="sharebut">
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <button ion-button icon-left (click)="uploadImage()" [disabled]="lastImage === null">
+        <ion-icon name="send"></ion-icon>Envoyer
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

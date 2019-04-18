@@ -1,0 +1,49 @@
+import { Component, ViewChild } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';
+
+@Component({
+  selector: 'page-filactu',
+  templateUrl: 'filactu.html'
+})
+export class FilActuPage {
+public items : Array<any> = [];
+
+
+
+  constructor(public navCtrl: NavController, public http   : HttpClient) {
+this.load();
+}
+
+/**
+    * Retrieve the JSON encoded data from the remote server
+    * Using Angular's Http class and an Observable - then
+    * assign this to the items array for rendering to the HTML template
+    *
+    * @public
+    * @method load
+    * @return {None}
+    */
+   load() : void
+   {
+      this.http
+      .get('http://tmoisan.eu/weddingionic/getposts.php')
+      .subscribe((data : any) =>
+      {
+         console.dir(data);
+         this.items = data;
+      },
+      (error : any) =>
+      {
+         console.dir(error);
+      });
+   }
+
+
+
+}
+
+
+
+
+

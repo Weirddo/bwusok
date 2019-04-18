@@ -1,0 +1,50 @@
+<ion-content [ngStyle]="{ 'background-color': '#efefef'}" padding class="loginbg">
+  <h2 class="home-title"><img src="./assets/imgs/betweenus2.png"></h2>
+ <ion-list id="logform">
+ 
+ <ion-item class="logitem">
+ <ion-label floating>Last Name</ion-label>
+ <ion-input type="text" name="lastname" [(ngModel)]="data.lastname"></ion-input>
+ </ion-item>
+     
+    <ion-item class="logitem">
+ <ion-label floating>First Name</ion-label>
+ <ion-input type="text" name="firstname" [(ngModel)]="data.firstname"></ion-input>
+ </ion-item>  
+     
+
+<ion-item class="logitem">
+ <ion-label floating>Email</ion-label>
+ <ion-input type="text" name="email" [(ngModel)]="data.email"></ion-input>
+ </ion-item>
+     
+     
+ <ion-item>
+ <ion-label floating>Password</ion-label>
+ <ion-input type="password" name="pwd" [(ngModel)]="data.pwd"></ion-input>
+ </ion-item>
+ 
+ <ion-item text-wrap>
+      <input type = "checkbox" name="condis" [(ngModel)]="data.check">
+          <label class="checkboxme">
+             En cliquant sur ce lien vous acceptez les conditions de publications présentes à l'url suivante <a href="http://izostudio.fr/betweenus_condis.php"> Conditions BetweenUs</a>
+          </label>
+ </ion-item>
+ 
+<div padding>
+  <button ion-button class="logbut" block (click)="submit()">S'enregistrer</button>
+</div>
+    </ion-list>
+
+    <!--
+    <ion-card>
+ <ion-card-header>
+ Response
+ </ion-card-header>
+
+ <ion-card-content>
+ <b>{{data.response}}</b>
+ </ion-card-content>
+ </ion-card>
+-->
+</ion-content>

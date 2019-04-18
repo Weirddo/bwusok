@@ -1,0 +1,22 @@
+<body ng-app="wedding" ng-controller="WeddingCtrl">
+
+
+
+<ion-content padding [ngStyle]="{ 'background-image': 'url(' + bgurl + ')'}" style="background-repeat:no-repeat;background-position: center top;
+    background-size:100% 100%;">
+     <h2 class="home-title">Cérémonie</h2>
+<ion-list>
+ <div *ngFor="let lieu of lieux">
+
+  <ion-item class="place-item" (click)="navme(lieu.adresse_lieu)">
+    <ion-thumbnail item-start>
+      <ion-icon name="ios-navigate" class="nav-icon"></ion-icon>
+    </ion-thumbnail>
+    <h2>{{lieu.type_lieu}}</h2>
+    <p>{{lieu.adresse_lieu}}</p>
+    <button ion-button class="place-but">Y aller</button>
+  </ion-item>
+    </div>
+</ion-list>
+</ion-content>
+</body>
