@@ -43,7 +43,15 @@ this.http=http;
   storage.get('refevent').then((refevent)=>{
 this.refevent =refevent;
 this.read();
+       /*setInterval(function(){ this.read();
+     
+    }, 1000);*/
+      setInterval(() => { 
+   this.read(); // Now the "this" still references the component
+}, 5000);
+    
 });
+       
 }
   ionViewDidLoad() {
     console.log('ionViewDidLoad GoldenbookPage');

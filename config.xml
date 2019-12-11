@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="2600" id="com.moisan.wedding" version="0.26.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="5000" id="com.moisan.wedding" version="0.5.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Betweenus Wedding</name>
     <description>Application by Izo</description>
     <author email="contact@izostudio.fr" href="http://izostudio.fr/betweenus.php">BetweenUs - Wedding</author>

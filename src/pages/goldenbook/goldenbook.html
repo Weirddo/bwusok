@@ -11,7 +11,7 @@
      <h2 class="home-title">Livre d'or</h2>
 
 <div *ngFor="let message of messages" class="messblock">
-     <p class="goldenusername">{{message.prenom}} {{message.nom}}</p>
+     <p class="goldenusername" [style.color]="message.colorname">{{message.prenom}} {{message.nom}}</p>
     <p class="feedcontent">{{message.content}}</p>
 
 
